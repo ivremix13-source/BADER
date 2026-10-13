@@ -372,11 +372,11 @@ const translations = {
     demoCampaign: "حملة توضيحية",
 
     copied: "تم النسخ",
-    accountMissing: "4176415",
+    accountMissing: "بدرالدين انور الحاج",
     invalidAmount: "يرجى إدخال مبلغ اكبر من الصفر ",
     enterReference: "يرجى إدخال رقم العملية.",
     donationPrepared: "تم تجهيز تفاصيل المساهمة.",
-    noAccount: "بدرالدين انور الحاج",
+    noAccount: "4176415",
     contactUnavailable: "سيتم إضافة وسيلة التواصل لاحقًا."
   },
 
