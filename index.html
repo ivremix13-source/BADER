@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#073f32">
+
+  <meta name="description"
+        content="بادر، منصة للعطاء والمساهمة في المبادرات الإنسانية والتعليمية والصحية والإغاثية.">
+
+  <title>بادر | BADER — لأن العطاء يصنع الفرق</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- شاشة البداية -->
+  <div class="splash-screen" id="splashScreen">
+    <div class="splash-content">
+      <div class="brand-mark splash-mark">
+        <span class="brand-letter">B</span>
+        <span class="brand-star">✦</span>
+      </div>
+
+      <h1 class="splash-name">بــادر</h1>
+      <p class="splash-english">B A D E R</p>
+
+      <div class="splash-divider"></div>
+
+      <p class="splash-message">
+        لأن العطاء يصنع الفرق
+      </p>
+
+      <div class="splash-loader">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- إشعارات الموقع -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- رأس الموقع -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="#home" class="brand" aria-label="بادر - الرئيسية">
+        <div class="brand-mark">
+          <span class="brand-letter">B</span>
+          <span class="brand-star">✦</span>
+        </div>
+
+        <div class="brand-text">
+          <strong data-i18n="brand">بادر</strong>
+          <span>BADER FOUNDATION</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="التنقل الرئيسي">
+        <a href="#home" class="nav-link active" data-i18n="navHome">
+          الرئيسية
+        </a>
+
+        <a href="#campaigns" class="nav-link" data-i18n="navCampaigns">
+          الحملات
+        </a>
+
+        <a href="#about" class="nav-link" data-i18n="navAbout">
+          عن بادر
+        </a>
+
+        <a href="#contact" class="nav-link" data-i18n="navContact">
+          تواصل معنا
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="themeToggle"
+                aria-label="تغيير الوضع اللوني"
+                title="الوضع النهاري والداكن">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button class="icon-button language-button" id="languageToggle"
+                aria-label="تغيير اللغة">
+          <span id="languageLabel">EN</span>
+        </button>
+
+        <a href="#campaigns" class="button button-primary header-donate">
+          <i class="fa-solid fa-heart"></i>
+          <span data-i18n="donateNow">تبرع الآن</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- الرئيسية -->
+    <section class="hero-section" id="home">
+      <div class="hero-decoration hero-decoration-one"></div>
+      <div class="hero-decoration hero-decoration-two"></div>
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span data-i18n="heroEyebrow">
+              معًا نصنع أثرًا يبقى
+            </span>
+          </div>
+
+          <h1 data-i18n="heroTitle">
+            الخير الذي<br>
+            <span>تمنحه اليوم</span><br>
+            يصنع غدًا أفضل.
+          </h1>
+
+          <p class="hero-description" data-i18n="heroDescription">
+            كل مساهمة تحمل فرصة جديدة، وكل يد تمتد بالعطاء
+            يمكنها أن تغيّر حياة إنسان. اختر المجال الذي يهمك
+            وكن جزءًا من قصة خير جديدة.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#campaigns" class="button button-primary button-large">
+              <span data-i18n="exploreCampaigns">اكتشف الحملات</span>
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+            <a href="#about" class="button button-outline button-large">
+              <i class="fa-regular fa-circle-play"></i>
+              <span data-i18n="learnAbout">تعرّف على بادر</span>
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-icon">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+
+            <div>
+              <strong data-i18n="trustTitle">
+                العطاء بمسؤولية
+              </strong>
+
+              <span data-i18n="trustText">
+                الشفافية أساس كل مساهمة
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+          <div class="hero-image-frame">
+            <img
+              src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1100&q=85"
+              alt="أطفال يشاركون في نشاط إنساني"
+              class="hero-image"
+            >
+
+            <div class="hero-image-overlay"></div>
+
+            <div class="hero-image-caption">
+              <span class="caption-symbol">✦</span>
+
+              <div>
+                <strong data-i18n="heroImageTitle">
+                  أثر يبدأ منك
+                </strong>
+
+                <p data-i18n="heroImageText">
+                  خطوة صغيرة، أمل كبير
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-top">
+            <div class="floating-icon gold-icon">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+
+            <div>
+              <strong data-i18n="floatingTop">
+                كل مساهمة مهمة
+              </strong>
+
+              <span data-i18n="floatingTopText">
+                كن سببًا في الخير
+              </span>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-bottom">
+            <div class="floating-icon green-icon">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+
+            <div>
+              <strong data-i18n="floatingBottom">
+                الأمل ينمو بالعطاء
+              </strong>
+
+              <span data-i18n="floatingBottomText">
+                معًا نحو مستقبل أفضل
+              </span>
+            </div>
+          </div>
+
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- الإحصائيات -->
+    <section class="statistics-section">
+      <div class="container statistics-grid">
+
+        <div class="statistic-item">
+          <div class="statistic-icon">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+
+          <div>
+            <p data-i18n="totalDonations">إجمالي التبرعات</p>
+
+            <h2>
+              <span id="totalDonations">0</span>
+              <small data-i18n="currency">ج.س</small>
+            </h2>
+          </div>
+        </div>
+
+        <div class="statistic-item">
+          <div class="statistic-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div>
+            <p data-i18n="activeCampaigns">الحملات المعروضة</p>
+            <h2 id="campaignCount">12</h2>
+          </div>
+        </div>
+
+        <div class="statistic-item">
+          <div class="statistic-icon">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+
+          <div>
+            <p data-i18n="totalGoal">إجمالي الأهداف</p>
+
+            <h2>
+              <span id="totalGoal">0</span>
+              <small data-i18n="currency">ج.س</small>
+            </h2>
+          </div>
+        </div>
+
+        <div class="statistic-item">
+          <div class="statistic-icon">
+            <i class="fa-solid fa-hands-holding-circle"></i>
+          </div>
+
+          <div>
+            <p data-i18n="openCampaigns">مجالات العطاء</p>
+            <h2>12</h2>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="statistics-disclaimer container" data-i18n="demoStats">
+        الأرقام المعروضة توضيحية في هذه النسخة، ولا تمثل مبالغ
+        تم تحصيلها فعليًا.
+      </p>
+    </section>
+
+    <!-- الحملات -->
+    <section class="campaigns-section section-padding" id="campaigns">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <div class="section-kicker" data-i18n="campaignsKicker">
+              أبواب الخير كثيرة
+            </div>
+
+            <h2 data-i18n="campaignsTitle">
+              أين تريد أن <span>يصل عطاؤك؟</span>
+            </h2>
+
+            <p data-i18n="campaignsDescription">
+              اختر المجال الأقرب إلى قلبك، واجعل مساهمتك
+              بداية حقيقية للتغيير.
+            </p>
+          </div>
+
+          <a href="#campaigns" class="text-link" id="showAllCampaigns">
+            <span data-i18n="viewAll">عرض جميع الحملات</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
+        </div>
+
+        <!-- أدوات البحث والتصفية -->
+        <div class="campaign-toolbar">
+
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+              type="search"
+              id="campaignSearch"
+              placeholder="ابحث عن حملة..."
+              data-i18n-placeholder="searchPlaceholder"
+              aria-label="البحث عن حملة"
+            >
+          </div>
+
+          <div class="filter-buttons" id="filterButtons">
+
+            <button class="filter-button active" data-filter="all"
+                    data-i18n="filterAll">
+              الكل
+            </button>
+
+            <button class="filter-button" data-filter="health"
+                    data-i18n="filterHealth">
+              الصحة
+            </button>
+
+            <button class="filter-button" data-filter="education"
+                    data-i18n="filterEducation">
+              التعليم
+            </button>
+
+            <button class="filter-button" data-filter="relief"
+                    data-i18n="filterRelief">
+              الإغاثة
+            </button>
+
+            <button class="filter-button" data-filter="community"
+                    data-i18n="filterCommunity">
+              المجتمع
+            </button>
+
+            <button class="filter-button" data-filter="national"
+                    data-i18n="filterNational">
+              المبادرات الوطنية
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- بطاقات الحملات تُنشأ بواسطة JavaScript -->
+        <div class="campaign-grid" id="campaignGrid"></div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <h3 data-i18n="noResults">
+            لم نعثر على حملات مطابقة
+          </h3>
+
+          <p data-i18n="noResultsText">
+            جرّب البحث بكلمات أخرى.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- قسم رسالة إنسانية -->
+    <section class="impact-section">
+      <div class="container impact-grid">
+
+        <div class="impact-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1000&q=85"
+            alt="متطوعون يشاركون في نشاط إنساني"
+            loading="lazy"
+          >
+
+          <div class="impact-image-label">
+            <i class="fa-solid fa-heart"></i>
+            <span data-i18n="impactBadge">
+              العطاء يجمعنا
+            </span>
+          </div>
+        </div>
+
+        <div class="impact-content">
+
+          <div class="section-kicker" data-i18n="impactKicker">
+            أكثر من مجرد تبرع
+          </div>
+
+          <h2 data-i18n="impactTitle">
+            حين تمد يدك بالخير،<br>
+            <span>تفتح بابًا للأمل.</span>
+          </h2>
+
+          <p data-i18n="impactDescription">
+            نؤمن أن المساهمة الإنسانية لا تُقاس بحجمها فقط،
+            بل بالأثر الذي تتركه. من التعليم إلى الصحة،
+            ومن الإغاثة إلى رعاية الأسر، لكل مساهمة معنى.
+          </p>
+
+          <div class="impact-points">
+
+            <div>
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="impactPoint1">
+                حملات واضحة الأهداف
+              </span>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="impactPoint2">
+                معلومات تشرح احتياجات كل حملة
+              </span>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="impactPoint3">
+                تجربة تبرع بسيطة وسهلة
+              </span>
+            </div>
+
+          </div>
+
+          <a href="#about" class="button button-primary button-large">
+            <span data-i18n="discoverMission">اكتشف رسالتنا</span>
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- كيف يعمل التبرع -->
+    <section class="steps-section section-padding">
+      <div class="container">
+
+        <div class="section-heading centered-heading">
+          <div>
+            <div class="section-kicker" data-i18n="stepsKicker">
+              الخير بخطوات بسيطة
+            </div>
+
+            <h2 data-i18n="stepsTitle">
+              مساهمتك تبدأ <span>بخطوة</span>
+            </h2>
+
+            <p data-i18n="stepsDescription">
+              تجربة واضحة ترشدك من اختيار الحملة إلى إرسال بيانات التبرع.
+            </p>
+          </div>
+        </div>
+
+        <div class="steps-grid">
+
+          <article class="step-card">
+            <div class="step-number">01</div>
+
+            <div class="step-icon">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+
+            <h3 data-i18n="step1Title">اختر حملتك</h3>
+
+            <p data-i18n="step1Text">
+              تصفح مجالات الخير واختر المبادرة التي ترغب في دعمها.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">02</div>
+
+            <div class="step-icon">
+              <i class="fa-solid fa-coins"></i>
+            </div>
+
+            <h3 data-i18n="step2Title">حدد مساهمتك</h3>
+
+            <p data-i18n="step2Text">
+              أدخل المبلغ الذي تريد المساهمة به واختر وسيلة التحويل.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">03</div>
+
+            <div class="step-icon">
+              <i class="fa-solid fa-receipt"></i>
+            </div>
+
+            <h3 data-i18n="step3Title">أرسل رقم العملية</h3>
+
+            <p data-i18n="step3Text">
+              أدخل مرجع التحويل لتتمكن الإدارة من مراجعته لاحقًا.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- عن بادر -->
+    <section class="about-section section-padding" id="about">
+      <div class="container about-card">
+
+        <div class="about-symbol">
+          <div class="brand-mark about-mark">
+            <span class="brand-letter">B</span>
+            <span class="brand-star">✦</span>
+          </div>
+
+          <span>BADER</span>
+        </div>
+
+        <div class="about-content">
+
+          <div class="section-kicker" data-i18n="aboutKicker">
+            حكاية بادر
+          </div>
+
+          <h2 data-i18n="aboutTitle">
+            الخير ليس بعيدًا،<br>
+            <span>حين نقرر أن نبدأ.</span>
+          </h2>
+
+          <p data-i18n="aboutDescription">
+            بادر منصة تهدف إلى جمع مجالات العطاء الإنساني
+            في مكان واحد، لتسهيل الوصول إلى المبادرات الصحية
+            والتعليمية والإغاثية والمجتمعية.
+          </p>
+
+          <p data-i18n="aboutNote">
+            نعمل على تقديم تجربة واضحة تحترم المتبرع
+            وتُبرز احتياجات الحملات، مع السعي إلى بناء
+            منظومة موثوقة للتحقق من التبرعات والجهات المستفيدة.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- دعوة للتبرع -->
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+
+        <div>
+          <span class="cta-overline" data-i18n="ctaOverline">
+            قد تكون مساهمتك بداية قصة جديدة
+          </span>
+
+          <h2 data-i18n="ctaTitle">
+            لا تنتظر الفرصة لصنع الفرق.
+          </h2>
+
+          <p data-i18n="ctaDescription">
+            بادر اليوم، واجعل للخير مكانًا في يومك.
+          </p>
+        </div>
+
+        <a href="#campaigns" class="button button-gold button-large">
+          <span data-i18n="ctaButton">ابدأ بالعطاء</span>
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- التذييل -->
+  <footer class="site-footer" id="contact">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand-column">
+
+        <a href="#home" class="brand footer-brand">
+          <div class="brand-mark">
+            <span class="brand-letter">B</span>
+            <span class="brand-star">✦</span>
+          </div>
+
+          <div class="brand-text">
+            <strong data-i18n="brand">بادر</strong>
+            <span>BADER FOUNDATION</span>
+          </div>
+        </a>
+
+        <p data-i18n="footerDescription">
+          مساحة تجمع القلوب حول الخير، وتمنح كل مساهمة فرصة لصنع أثر.
+        </p>
+
+        <div class="footer-socials">
+          <a href="#contact" aria-label="واتساب">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="#contact" aria-label="فيسبوك">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#contact" aria-label="إنستغرام">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-links-column">
+        <h3 data-i18n="footerLinks">روابط سريعة</h3>
+
+        <a href="#home" data-i18n="navHome">الرئيسية</a>
+        <a href="#campaigns" data-i18n="navCampaigns">الحملات</a>
+        <a href="#about" data-i18n="navAbout">عن بادر</a>
+        <a href="#contact" data-i18n="navContact">تواصل معنا</a>
+      </div>
+
+      <div class="footer-links-column">
+        <h3 data-i18n="footerAreas">مجالات العطاء</h3>
+
+        <a href="#campaigns" data-filter-link="health"
+           data-i18n="filterHealth">الصحة</a>
+
+        <a href="#campaigns" data-filter-link="education"
+           data-i18n="filterEducation">التعليم</a>
+
+        <a href="#campaigns" data-filter-link="relief"
+           data-i18n="filterRelief">الإغاثة</a>
+
+        <a href="#campaigns" data-filter-link="community"
+           data-i18n="filterCommunity">المجتمع</a>
+      </div>
+
+      <div class="footer-contact-column">
+        <h3 data-i18n="footerContact">تواصل معنا</h3>
+
+        <p data-i18n="contactDescription">
+          للاستفسارات المتعلقة بالحملات والتبرعات.
+        </p>
+
+        <button class="button button-outline footer-contact-button"
+                id="contactButton">
+          <i class="fa-regular fa-envelope"></i>
+          <span data-i18n="contactUs">تواصل معنا</span>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>
+        © <span id="currentYear"></span> BADER.
+        <span data-i18n="copyright">جميع الحقوق محفوظة.</span>
+      </p>
+
+      <span class="footer-motto" data-i18n="footerMotto">
+        بادر بالخير، واصنع الأثر.
+      </span>
+    </div>
+
+  </footer>
+
+  <!-- شريط تنقل الهاتف -->
+  <nav class="mobile-bottom-nav" aria-label="التنقل للهاتف">
+
+    <a href="#home" class="mobile-nav-item active">
+      <i class="fa-solid fa-house"></i>
+      <span data-i18n="navHome">الرئيسية</span>
+    </a>
+
+    <a href="#campaigns" class="mobile-nav-item">
+      <i class="fa-solid fa-heart"></i>
+      <span data-i18n="navCampaigns">الحملات</span>
+    </a>
+
+    <a href="#about" class="mobile-nav-item">
+      <i class="fa-solid fa-circle-info"></i>
+      <span data-i18n="navAbout">عن بادر</span>
+    </a>
+
+    <button class="mobile-nav-item" id="mobileSettings">
+      <i class="fa-solid fa-sliders"></i>
+      <span data-i18n="settings">الإعدادات</span>
+    </button>
+
+  </nav>
+
+  <!-- نافذة التبرع -->
+  <div class="modal-backdrop" id="donationModal"
+       aria-hidden="true">
+
+    <div class="donation-modal" role="dialog"
+         aria-modal="true" aria-labelledby="donationTitle">
+
+      <button class="modal-close" id="closeDonation"
+              aria-label="إغلاق">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- نموذج المبلغ -->
+      <div id="donationStepAmount">
+
+        <div class="modal-heading-icon">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="modal-kicker" data-i18n="donationKicker">
+          مساهمتك تصنع فرقًا
+        </div>
+
+        <h2 id="donationTitle" data-i18n="donationTitle">
+          ساهم في هذه الحملة
+        </h2>
+
+        <p class="modal-description" id="donationCampaignDescription">
+          اختر المبلغ الذي ترغب في المساهمة به.
+        </p>
+
+        <div class="selected-campaign-summary"
+             id="selectedCampaignSummary"></div>
+
+        <form id="donationForm">
+
+          <label for="donationAmount" data-i18n="amountLabel">
+            المبلغ المراد التبرع به
+          </label>
+
+          <div class="amount-input-wrap">
+            <input type="number" id="donationAmount"
+                   min="1" step="any" required
+                   placeholder="مثال: 50000"
+                   inputmode="decimal">
+
+            <span data-i18n="currency">ج.س</span>
+          </div>
+
+          <div class="quick-amounts">
+            <button type="button" data-amount="10000">10,000</button>
+            <button type="button" data-amount="25000">25,000</button>
+            <button type="button" data-amount="50000">50,000</button>
+            <button type="button" data-amount="100000">100,000</button>
+          </div>
+
+          <label for="paymentMethod" data-i18n="paymentLabel">
+            وسيلة التحويل
+          </label>
+
+          <div class="select-wrap">
+            <select id="paymentMethod" required>
+              <option value="bankak" data-i18n="bankak">
+                بنكك
+              </option>
+            </select>
+
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+          <div class="account-details" id="accountDetails">
+
+            <div class="account-details-header">
+              <div class="account-bank-icon">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+
+              <div>
+                <strong data-i18n="accountDetails">
+                  بيانات حساب التحويل
+                </strong>
+
+                <span data-i18n="accountDetailsNote">
+                  استخدم البيانات التالية لإجراء التحويل
+                </span>
+              </div>
+            </div>
+
+            <div class="account-field">
+              <span data-i18n="accountName">اسم صاحب الحساب</span>
+
+              <div class="account-field-value">
+                <strong id="accountHolder">سيُضاف لاحقًا</strong>
+
+                <button type="button" class="copy-button"
+                        data-copy="accountHolder"
+                        aria-label="نسخ اسم الحساب">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="account-field">
+              <span data-i18n="accountNumber">رقم الحساب</span>
+
+              <div class="account-field-value">
+                <strong id="accountNumber">سيُضاف لاحقًا</strong>
+
+                <button type="button" class="copy-button"
+                        data-copy="accountNumber"
+                        aria-label="نسخ رقم الحساب">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="account-note">
+              <i class="fa-solid fa-circle-info"></i>
+
+              <span data-i18n="accountNote">
+                تحقق من اسم المستفيد ورقم الحساب قبل التحويل.
+              </span>
+            </div>
+
+          </div>
+
+          <button type="submit"
+                  class="button button-primary button-full button-large">
+            <span data-i18n="continueToReference">
+              متابعة إلى رقم العملية
+            </span>
+
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+
+          <p class="modal-security-note">
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <span data-i18n="demoPaymentNotice">
+              هذه الواجهة لا تنفذ تحويلًا ماليًا بنفسها.
+            </span>
+          </p>
+
+        </form>
+
+      </div>
+
+      <!-- نموذج رقم العملية -->
+      <div id="donationStepReference" hidden>
+
+        <div class="modal-heading-icon">
+          <i class="fa-solid fa-receipt"></i>
+        </div>
+
+        <div class="modal-kicker" data-i18n="referenceKicker">
+          خطوة أخيرة
+        </div>
+
+        <h2 data-i18n="referenceTitle">
+          أدخل رقم العملية
+        </h2>
+
+        <p class="modal-description"
+           data-i18n="referenceDescription">
+          إذا كنت قد أجريت التحويل بالفعل، أدخل الرقم المرجعي
+          الظاهر في إشعار العملية.
+        </p>
+
+        <div class="reference-summary" id="referenceSummary"></div>
+
+        <form id="referenceForm">
+
+          <label for="transactionReference"
+                 data-i18n="referenceLabel">
+            رقم العملية المرجعي
+          </label>
+
+          <input type="text" id="transactionReference"
+                 required maxlength="100"
+                 autocomplete="off"
+                 placeholder="أدخل رقم العملية">
+
+          <label for="donorName" data-i18n="donorNameLabel">
+            الاسم (اختياري)
+          </label>
+
+          <input type="text" id="donorName"
+                 maxlength="100"
+                 autocomplete="name"
+                 placeholder="اسم المتبرع">
+
+          <button type="submit"
+                  class="button button-primary button-full button-large">
+            <span data-i18n="sendReference">إرسال البيانات</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+          <p class="modal-security-note"
+             data-i18n="referenceNotice">
+            في هذه النسخة تُعرض رسالة تأكيد فقط؛ لا تُرسل البيانات
+            إلى خادم ولا يتم التحقق من التحويل.
+          </p>
+
+        </form>
+
+      </div>
+
+      <!-- رسالة الشكر -->
+      <div id="donationStepSuccess" hidden>
+
+        <div class="success-animation">
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="modal-kicker" data-i18n="successKicker">
+          شكرًا لأنك بادرت
+        </div>
+
+        <h2 data-i18n="successTitle">
+          عطاؤك يحمل الأمل
+        </h2>
+
+        <p class="success-description"
+           data-i18n="successDescription">
+          شكرًا لمساهمتك. تم تسجيل بياناتك على هذه الواجهة،
+          لكن لم يتم إرسالها إلى خادم أو تأكيد وصول الأموال.
+        </p>
+
+        <div class="success-reference" id="successReference"></div>
+
+        <button type="button"
+                class="button button-primary button-full button-large"
+                id="finishDonation"
+                data-i18n="finish">
+          العودة إلى الحملات
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- نافذة الإعدادات -->
+  <div class="modal-backdrop" id="settingsModal"
+       aria-hidden="true">
+
+    <div class="settings-modal" role="dialog"
+         aria-modal="true" aria-labelledby="settingsTitle">
+
+      <button class="modal-close" id="closeSettings"
+              aria-label="إغلاق">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-heading-icon">
+        <i class="fa-solid fa-sliders"></i>
+      </div>
+
+      <h2 id="settingsTitle" data-i18n="settingsTitle">
+        إعدادات بادر
+      </h2>
+
+      <p class="modal-description" data-i18n="settingsDescription">
+        خصص تجربتك بالطريقة التي تناسبك.
+      </p>
+
+      <div class="setting-row">
+        <div class="setting-row-icon">
+          <i class="fa-solid fa-language"></i>
+        </div>
+
+        <div class="setting-row-copy">
+          <strong data-i18n="languageSetting">لغة الموقع</strong>
+          <span data-i18n="languageSettingText">
+            اختر اللغة التي تفضلها
+          </span>
+        </div>
+
+        <select id="settingsLanguage" aria-label="لغة الموقع">
+          <option value="ar">العربية</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+
+      <div class="setting-row">
+        <div class="setting-row-icon">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </div>
+
+        <div class="setting-row-copy">
+          <strong data-i18n="themeSetting">مظهر الموقع</strong>
+          <span data-i18n="themeSettingText">
+            اختر الوضع النهاري أو الداكن
+          </span>
+        </div>
+
+        <button class="theme-choice" id="settingsThemeToggle">
+          <i class="fa-solid fa-moon"></i>
+          <span data-i18n="darkMode">الوضع الداكن</span>
+        </button>
+      </div>
+
+      <div class="settings-footer">
+        <i class="fa-solid fa-heart"></i>
+
+        <span data-i18n="settingsFooter">
+          بادر بالخير، واصنع الأثر.
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
