@@ -26,8 +26,8 @@ const CONFIG = {
   currency: "ج.س",
 
   // Demo totals only — not verified donations.
-  demoTotalDonations: 18500000,
-  demoTotalGoal: 75000000,
+  demoTotalDonations: 0,
+  demoTotalGoal: 10000000,
 
   splashDuration: 1900
 };
@@ -48,7 +48,7 @@ const campaigns = [
     image:
       "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=900&q=80",
     goal: 12000000,
-    raised: 6850000,
+    raised: 0,
     featured: true
   },
 
@@ -62,7 +62,7 @@ const campaigns = [
       "المساهمة في توفير الكتب والأدوات المدرسية ودعم فرص التعليم للأطفال.",
     image:
       "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80",
-    goal: 8000000,
+    goal: 0,
     raised: 3250000,
     featured: true
   },
@@ -77,8 +77,8 @@ const campaigns = [
       "المساهمة في توفير الاحتياجات الأساسية للأسر التي اضطرت إلى مغادرة منازلها.",
     image:
       "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80",
-    goal: 15000000,
-    raised: 9200000,
+    goal: 0,
+    raised: 92000000,
     featured: true
   },
 
@@ -92,7 +92,7 @@ const campaigns = [
       "دعم مبادرات توفير الغذاء والمواد الأساسية للأسر ذات الاحتياجات العاجلة.",
     image:
       "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=900&q=80",
-    goal: 6500000,
+    goal: 0,
     raised: 4100000,
     featured: false
   },
