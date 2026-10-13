@@ -62,8 +62,8 @@ const campaigns = [
       "المساهمة في توفير الكتب والأدوات المدرسية ودعم فرص التعليم للأطفال.",
     image:
       "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80",
-    goal: 0,
-    raised: 3250000,
+    goal: 10000000,
+    raised: 0,
     featured: true
   },
 
@@ -77,8 +77,8 @@ const campaigns = [
       "المساهمة في توفير الاحتياجات الأساسية للأسر التي اضطرت إلى مغادرة منازلها.",
     image:
       "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80",
-    goal: 0,
-    raised: 92000000,
+    goal: 4500000,
+    raised: 0,
     featured: true
   },
 
@@ -92,8 +92,8 @@ const campaigns = [
       "دعم مبادرات توفير الغذاء والمواد الأساسية للأسر ذات الاحتياجات العاجلة.",
     image:
       "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=900&q=80",
-    goal: 0,
-    raised: 4100000,
+    goal: 2300000,
+    raised: 0,
     featured: false
   },
 
@@ -108,7 +108,7 @@ const campaigns = [
     image:
       "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80",
     goal: 5000000,
-    raised: 2150000,
+    raised: 0,
     featured: false
   },
 
@@ -123,7 +123,7 @@ const campaigns = [
     image:
       "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80",
     goal: 7000000,
-    raised: 4600000,
+    raised: 0,
     featured: true
   },
 
@@ -138,7 +138,7 @@ const campaigns = [
     image:
       "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=900&q=80",
     goal: 5500000,
-    raised: 1750000,
+    raised: 0,
     featured: false
   },
 
@@ -153,7 +153,7 @@ const campaigns = [
     image:
       "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80",
     goal: 9000000,
-    raised: 3800000,
+    raised: 0,
     featured: false
   },
 
@@ -168,7 +168,7 @@ const campaigns = [
     image:
       "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=900&q=80",
     goal: 4000000,
-    raised: 1950000,
+    raised: 0,
     featured: false
   },
 
@@ -183,7 +183,7 @@ const campaigns = [
     image:
       "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80",
     goal: 3500000,
-    raised: 1200000,
+    raised: 0,
     featured: false
   },
 
@@ -198,7 +198,7 @@ const campaigns = [
     image:
       "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=900&q=80",
     goal: 5000000,
-    raised: 800000,
+    raised: 0,
     featured: false
   },
 
@@ -213,7 +213,7 @@ const campaigns = [
     image:
       "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80",
     goal: 4500000,
-    raised: 2400000,
+    raised: 0,
     featured: false
   }
 ];
@@ -372,11 +372,11 @@ const translations = {
     demoCampaign: "حملة توضيحية",
 
     copied: "تم النسخ",
-    accountMissing: "لم تتم إضافة بيانات الحساب بعد.",
-    invalidAmount: "يرجى إدخال مبلغ صحيح أكبر من صفر.",
+    accountMissing: "4176415",
+    invalidAmount: "يرجى إدخال مبلغ اكبر من الصفر ",
     enterReference: "يرجى إدخال رقم العملية.",
     donationPrepared: "تم تجهيز تفاصيل المساهمة.",
-    noAccount: "بيانات الحساب غير متاحة حاليًا.",
+    noAccount: "بدرالدين انور الحاج",
     contactUnavailable: "سيتم إضافة وسيلة التواصل لاحقًا."
   },
 
